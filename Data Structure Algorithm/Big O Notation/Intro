@@ -1,0 +1,18 @@
+def sum1(n):
+    result = 0
+    for i in range(n + 1):
+        result += i
+    return result                   # This function means sum1 = 1 + 2 + 3 + ---------------------- + n - 1 + n
+
+def sum2(n):
+    return int(n * (n + 1) / 2)     # This function means sum2 = n * (n + 1) / 2
+
+print(sum1(45))
+
+print(sum2(45))
+
+
+# same result -> 1035
+# But, using the Big O notation, sum1 takes O(n), sum2 takes O(1)
+# sum1 takes more time when n is increase.
+# sum2 takes always same time.
