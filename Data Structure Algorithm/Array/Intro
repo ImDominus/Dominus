@@ -12,3 +12,6 @@
 # Low level arrays may be wasting memory. ex) array[0] = mike, array[1] = joseph, must each cell have 12bytes.
 # (find array = start + (cell_size) * index) Instead, take the reference at the array.
 #
+
+# Dynamic Array
+# Don't need to specify how large an array
