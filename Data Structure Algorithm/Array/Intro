@@ -1,0 +1,14 @@
+# Computer hardware is designed, in theory, so that any byte of the main memory can be efficiently accessed
+# Store or access memory => O(1)
+
+# Low level array
+# ------------------------------------------------------------------------------------------------------------
+# ---------------------2122 / 2123 / 2124 / 2125 / -----------------------------------------------------------
+# ---------------------    A              B        -----------------------------------------------------------
+# find array = start + (cell_size) * index
+# array[1]  =  2122 + (2) * 1 = 2124        => access memory => O(1)
+
+# Referential Arrays
+# Low level arrays may be wasting memory. ex) array[0] = mike, array[1] = joseph, must each cell have 12bytes.
+# (find array = start + (cell_size) * index) Instead, take the reference at the array.
+#
