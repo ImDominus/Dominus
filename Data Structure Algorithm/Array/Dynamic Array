@@ -1,0 +1,35 @@
+import sys #To get getsize fuction
+
+n = 20
+
+data = []
+
+for i in range(n):
+    # Number of element
+    a = len(data)
+    # Actual Size
+    b = sys.getsizeof(data)
+
+    print ("Length: %d; Size in bytes: %d" % (a, b))
+    data.append(n)
+    
+# Result
+# Length: 0; Size in bytes: 36
+# Length: 1; Size in bytes: 52
+# Length: 2; Size in bytes: 52
+# Length: 3; Size in bytes: 52
+# Length: 4; Size in bytes: 52
+# Length: 5; Size in bytes: 68
+# Length: 6; Size in bytes: 68
+# Length: 7; Size in bytes: 68
+# Length: 8; Size in bytes: 68
+# Length: 9; Size in bytes: 100
+
+
+##### Important #####
+# We can't actually grow that array, its capacity is fixed.
+# So, takes the step.
+# 1) Allocate a new array B with larger capacity.
+# 2) B[i] = A[i]
+# 3) reassign reference, So B is now A
+# 4) still, formal A is alive. With, garbage collection A will die
