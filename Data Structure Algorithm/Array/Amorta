@@ -1,0 +1,14 @@
+Cost model: Let’s say that inserting into the array costs 1, taking an element out of the array
+costs 1, and the cost of resizing the array is the number of elements moved. (Say that all other
+operations, like incrementing or decrementing “top”, are free.)
+Question 1: What if when we resize we just increase the size by 1? Is that a good idea?
+
+Answer 1: Not really. If our n operations consist of n pushes then we will incur a total cost
+1 + 2 + 3 + 4 + . . . + n = n(n + 1)/2. That’s an amortized cost of (n + 1)/2 per operation.
+
+Question 2: What if we instead decide to double the size of the array when we resize?
+Answer 2: This is much better. Now, in any sequence of n operations, the total cost for resizing
+is 1 + 2 + 4 + 8 + . . . + 2i for some 2i < n (if all operations are pushes then 2i will be the largest
+power of 2 less than n).
+This sum is at most 2n − 1. Adding in the additional cost of n for
+inserting/removing, we get a total cost < 3n, and so our amortized cost per operation is < 3.
