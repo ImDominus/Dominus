@@ -26,3 +26,5 @@ def anagram(s1, s2):
 print(anagram('dog','god'))
 print(anagram('clint eastwood','old west action'))
 print(anagram('aa','bb'))
+
+##Using O(nlogn)
