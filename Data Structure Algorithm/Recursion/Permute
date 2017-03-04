@@ -1,0 +1,12 @@
+def permute(s, new = "", answer = []):
+    if len(s) <= 1:
+        answer.append(new + s)
+        return
+    else:
+        for i in range(len(s)):
+            new += s[i]
+            permute(s[:i] + s[i + 1:], new, answer)
+            new = new[:-1]                              ## if not use this line, "new" will be overlapped by before s[i]
+        return answer
+
+print(permute("1234"))
