@@ -10,3 +10,6 @@ def permute(s, new = "", answer = []):
         return answer
 
 print(permute("1234"))
+
+
+## time complexity => O(n!)
