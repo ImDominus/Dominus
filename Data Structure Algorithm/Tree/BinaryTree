@@ -27,4 +27,4 @@ def getLeftChild(root):
     return root[1]
 
 def getRightChild(root):
-    return root[2
+    return root[2]
