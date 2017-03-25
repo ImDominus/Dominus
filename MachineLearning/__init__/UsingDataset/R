@@ -1,0 +1,3 @@
+dataset = read.csv('Data.csv')
+
+## index start by 1 unlike python
