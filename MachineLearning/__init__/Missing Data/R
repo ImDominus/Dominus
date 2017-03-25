@@ -1,0 +1,8 @@
+dataset = read.csv('Data.csv')
+#$ is Columes
+dataset$Age = ifelse(is.na(dataset$Age), 
+                     ave(dataset$Age, FUN = function(x) mean(x, na.rm = TRUE)),
+                     dataset$Age)
+#is.na <= data is missing or not
+#ifelse -> same excel if function
+#mean(x, na.rm = TRUE) -> averaging functioning all columes
