@@ -1,48 +1,72 @@
-class binaryheap:
+class minheap(object):
     def __init__(self):
         self.heap = [0]
-        self.size = 0
 
-    def insert(self, k):
-        self.heap.append(k)
-        self.size += 1
-        i = len(self.heap) - 1
-        while i != 1:
-            if self.heap[i // 2] > self.heap[i]:
-                self.swap(i, i // 2)
+    def insert(self, number):
+        self.heap.append(number)
+        k = len(self.heap) - 1
+        while k >= 2:
+            if self.heap[k] < self.heap[k // 2]:
+                self.swap(k, k // 2)
+                k = k // 2
             else:
                 break
-            i = i // 2
 
-    def findmin(self):
-        return self.heap[1]
-
-    def pop(self):
-        self.swap(1, len(self.heap) - 1)
-        i = 1
-        while 2 * i + 1 <= len((self.heap)) - 2:
-            if self.heap[i] <= self.heap[2*i] and self.heap[i] <= self.heap[2*i + 1]:
-                break
-            elif self.heap[2*i] <= self.heap[2*i + 1]:
-                self.swap(i, 2*i)
-                i = 2 * i
+    def delete(self):
+        self.swap(1, -1)
+        p = self.heap.pop()
+        q = len(self.heap) - 1
+        k = 1
+        while True:
+            if 2 * k < q and 2 * k + 1 <= q:
+                if self.heap[k] > self.heap[2 * k] or self.heap[k] > self.heap[2 * k + 1]:
+                    if self.heap[2 * k] > self.heap[2 * k + 1]:
+                        self.swap(2 * k + 1, k)
+                        k = 2 * k + 1
+                    else:
+                        self.swap(2 * k, k)
+                        k = 2 * k
+                else:
+                    break
+            elif 2 * k == q:
+                if self.heap[k] > self.heap[2 * k]:
+                    self.swap(2 * k, k)
+                    break
+                else:
+                    break
             else:
-                self.swap(i, 2 * i + 1)
-                i = 2 * i + 1
-        return self.heap.pop()
+                break
+        return p
 
     def swap(self, a, b):
-        k = self.heap[a]
+        temp = self.heap[a]
         self.heap[a] = self.heap[b]
-        self.heap[b] = k
+        self.heap[b] = temp
 
-a = binaryheap()
-
-a.heap += [1,2,3,4,5,6,7,8,9]
-print(a.heap)
+a = minheap()
+a.insert(1)
+a.insert(3)
 a.insert(4)
+a.insert(6)
+a.insert(-1)
+a.insert(-2)
+a.insert(-9)
+a.insert(3)
+a.insert(10)
 print(a.heap)
-a.pop()
+a.delete()
 print(a.heap)
-a.pop()
+a.delete()
+print(a.heap)
+a.delete()
+print(a.heap)
+a.delete()
+print(a.heap)
+a.delete()
+print(a.heap)
+a.delete()
+print(a.heap)
+a.delete()
+print(a.heap)
+a.delete()
 print(a.heap)
