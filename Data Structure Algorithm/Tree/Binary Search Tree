@@ -38,6 +38,7 @@ class bst(object):
         if target is None:
             return
         else:
+            self.size -= 1
             if target.leftchild is None and target.rightchild is None:
                 if target.parent is None:
                     self.root = None
