@@ -1,0 +1,6 @@
+Find function y = b0 + b1 * x from dataset.
+Suppose dataset have lenear correlation, yi is from dataset and yi' is result from fuction yi' = b0 + b1 * xi
+let's make sum of (yi - yi') ** 2 minimum.
+by using partial differential equation. (xavg, yavg => average from dataset)
+b1 = sum((xi - xavg)*(yi - yavg)) / sum((xi - xavg) ** 2)
+b0 = yavg - b1 * xavg
