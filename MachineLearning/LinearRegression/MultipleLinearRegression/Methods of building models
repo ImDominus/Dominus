@@ -1,0 +1,21 @@
+1. All-in
+  - Just use all variables.
+  - Preparing backward elimiation.
+2. Backward Elimination (step by step) (fastest method!)
+  1) Select a significance level to stay in the model. (e.g. SL = 0.05)
+  2) Fit the full model with all possible predictors.
+  3) Consider the predictor with the highest P-value. If P > SL, goto 4), otherwise go to FIN (FIN == Your Model Is READY!)
+  4) Remove the predictor
+  5) Fit model without this variable -> goto step3
+3. Forward Selection
+  1) Select a significance level to stay in the model. (e.g. SL = 0.05)
+  2) Fit all simple regression models y ~ xn Select the one with the lowest P-value
+  3) Keep this variable and fit all possible models with one extra predictor added to the one(s) you already have
+  4) Consider the predictor with the lowest P-value. If P < SL, go to STEP3, otherwise go to FIN (FIN == keep the previous Model!)
+4. Bidirectional Elimination
+  - Mixing Backward Elimination, Forward Selection
+  1) Select a significance level to enter and to stay in the model (e.g. SLEnter = 0.05, SLStay = 0.05)
+  2) Perform the next step of Forward Selection (new variables must have: P < SLEnter to enter)
+  3) Perform All steps of Backward Elimination (old variables must have P < SLStay to stay) -> goto STEP2
+  4) No new variables can enter and no old variables can exit -> FIN (Model is ready to call!).
+5. Score Comparison
