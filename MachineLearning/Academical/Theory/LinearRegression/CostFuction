@@ -1,0 +1,3 @@
+Suppose Hypothesis == h, h(x) = a0 + a1x for training set.
+To nice fit, choose a0, a1 so that h is close to training example.
+Minimize sum((h(x) - y) ** 2) <- This is cost Function. (Squared error Function)
