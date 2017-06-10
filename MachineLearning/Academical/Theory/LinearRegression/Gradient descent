@@ -1,0 +1,14 @@
+For graph, may have bottoms for value. (Thinking down from the mountain)
+
+Repeat until convergence.
+ak := ak - (alpha) * d/d(ak) * sum(Function(a0, a1, a2, ''''', ai) - y)
+Alpha is learing rate. At each iteration k, must simultaneously update the parameters.
+If Alpha is too small, gradient descent can be slow.
+If Alpha is too large, gradient descent can overshoot the minimum.
+It may fail to converge, or even diverge.
+Also, gradient descent is find local minimum, not global minimum.
+In LinearRegression, h(x) = a0 + a1x
+then,
+a0 := a0 - alpha * sum(h(x) - y)
+a1 := a1 - alpha * sum(h(x) - y) * x
+Function(a0, a1) has always only one global minimum. As a result, gradient descent find a0, a1 which makes Function(a0, a1) minimum.
