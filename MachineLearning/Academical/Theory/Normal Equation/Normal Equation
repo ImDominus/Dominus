@@ -1,0 +1,18 @@
+Not using gradient descent.
+Suppose K(x) = ax^2 + bx + c (a>0)
+Using the derivation, K(x) has min value when x = (-b/2a)
+Using that cost function.
+Then,
+J(x0, x1, x2, ... ,xm) = sum(h(xi) - yi)^2
+If using partial diffrential for all xi and find (d/dxi)J(x) == 0.
+Then, finded (x0, x1, x2 ..., xm) makes cost function minimum.
+And, matrix ->
+x = (Xt*X)^-1*Xt*y (Octave -> pinv(X' * X) * X' * y
+But, (Xt * X)^-1 takes O(n**3). So, if n is bigger, slower.
+So, using that n < 10000
+
+X is training sets. then -> X * x = y.
+To find X -> multiply Xt in leftside.
+Then, Xt*X*x = Xt*y
+multiply (Xt*X)^-1 in leftside.
+Then, x = (XtX)^-1*Xt*y
