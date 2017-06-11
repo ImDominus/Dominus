@@ -1,0 +1,5 @@
+Using Polynomial Regression -> H(x) = a0 + a1x1 + a2x1^2 + ... anx1^n.
+This is resemble like multivariate linear regression.
+But, must using feature scaling.
+For example, if x1 range is (1 ~ 1000) -> x1^2 range is (1 ~ 1000000).
+So, it makes gradient descent slower.
