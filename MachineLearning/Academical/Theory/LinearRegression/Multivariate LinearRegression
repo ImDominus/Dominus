@@ -1,0 +1,8 @@
+Multivariate Linear Regression means hypothesis that
+h(x) = a0 + a1x1 + a2x2 + .... + anxn.
+(ex) homeprices depends on not only square feet, but also floor, when built... etc.
+
+using the matrix(vector) -> [a0 a1 a2 ... an][1 x1 x2 ... xn]^t = h(x)
+
+Gradient Descent ->
+xj := xj - alpha * 1/m * sum(h(xk) - yk) * xk
