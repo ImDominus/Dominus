@@ -1,0 +1,167 @@
+>> 5 + 6
+ans =  11
+>> 1 != 3
+ans = 1
+>> 2 ** 3
+ans =  8
+>> a = 3; % ; is supressing output
+>> a = pi
+a =  3.1416
+>> disp(a)
+ 3.1416
+>> disp(sprintf('2 decimals: %0.2f' , a))
+2 decimals: 3.14
+>> format long
+>> a
+a =  3.14159265358979
+>> A = [1 2; 3 4; 5 6]
+A =
+   1   2
+   3   4
+   5   6
+>> A = [1 2;
+3 4;
+5 6]
+A =
+   1   2
+   3   4
+   5   6
+>> v = [1 2 3]
+v =
+   1   2   3
+>> v = [1; 2; 3]
+v =
+   1
+   2
+   3
+>> v = 1:0.1:2
+v =
+ Columns 1 through 3:
+    1.00000000000000    1.10000000000000    1.20000000000000
+ Columns 4 through 6:
+    1.30000000000000    1.40000000000000    1.50000000000000
+ Columns 7 through 9:
+    1.60000000000000    1.70000000000000    1.80000000000000
+ Columns 10 and 11:
+    1.90000000000000    2.00000000000000
+>> ones(2,3)
+ans =
+   1   1   1
+   1   1   1
+>> rand(1, 3)
+ans =
+   0.510850043500433   0.818719981892210   0.915477306034885
+>> w = randn(1, 3)
+w =
+   0.301981949036514   1.368422916433814   1.731223424456749
+>> hist(w)
+>> hist(w, 50)
+>> eye(4)
+ans =
+Diagonal Matrix
+   1   0   0   0
+   0   1   0   0
+   0   0   1   0
+   0   0   0   1
+>> pwd
+ans = D:\Users\Windows10
+>> cd D:\Users\Windows10\Desktop\MachineLearning2
+>> load featureX.dat
+>> load featureY.dat
+>> who
+Variables in the current scope:
+
+ans       featureX  featureY
+
+>> size(featureX)
+ans =
+
+   5   2
+
+>> featureX
+featureX =
+
+   2500      1
+   2300      3
+   2100      1
+   2111      2
+   2031      5
+
+>> whos
+Variables in the current scope:
+
+   Attr Name          Size                     Bytes  Class
+   ==== ====          ====                     =====  =====
+        ans           1x2                         16  double
+        featureX      5x2                         80  double
+        featureY      5x1                         40  double
+
+Total is 17 elements using 136 bytes
+
+>> clear featureX
+>> whos
+Variables in the current scope:
+
+   Attr Name          Size                     Bytes  Class
+   ==== ====          ====                     =====  =====
+        ans           1x2                         16  double
+        featureY      5x1                         40  double
+
+Total is 7 elements using 56 bytes
+>> v = featureY(1:3)
+v =
+   3000
+   3100
+   2450
+>> save basic.mat v;
+>> load basic.mat
+>> v
+v =
+   3000
+   3100
+   2450
+>> save basic.txt v -ascii
+>> A = [1 2; 3 4; 5 6];
+>> A(2, :)
+ans =
+   3   4
+>> A([1 3], :)
+ans =
+   1   2
+   5   6
+>> A(:,2) = [10; 11; 12]
+A =
+    1   10
+    3   11
+    5   12
+>> A = [A, [100; 101; 102]]
+A =
+     1    10   100
+     3    11   101
+     5    12   102
+>> A(:)
+ans =
+     1
+     3
+     5
+    10
+    11
+    12
+   100
+   101
+   102
+>> A = [1 2; 3 4; 5 6];
+>> B = [11 12; 13 14; 15 16];
+>> C = [A B]
+C =
+    1    2   11   12
+    3    4   13   14
+    5    6   15   16
+>> C = [A;B]
+C =
+    1    2
+    3    4
+    5    6
+   11   12
+   13   14
+   15   16
