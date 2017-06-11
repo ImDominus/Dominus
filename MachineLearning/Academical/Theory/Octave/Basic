@@ -96,6 +96,7 @@ Variables in the current scope:
         featureX      5x2                         80  double
         featureY      5x1                         40  double
 
+
 Total is 17 elements using 136 bytes
 
 >> clear featureX
@@ -165,3 +166,107 @@ C =
    11   12
    13   14
    15   16
+   
+   
+>> A = magic(3)
+A =
+
+   8   1   6
+   3   5   7
+   4   9   2
+
+>> [r, c] = find(A >= 7)
+r =
+
+   1
+   3
+   2
+
+c =
+
+   1
+   2
+   3
+
+>> sum(A)
+ans =
+
+   15   15   15
+
+>> prod(A)
+ans =
+
+   96   45   84
+
+>> %floor -> rounddown, ceil -> roundup
+>> max(A, [], 1)
+ans =
+
+   8   9   7
+
+>> max(A, [], 2)
+ans =
+
+   8
+   7
+   9
+
+>> pinv(A)
+ans =
+
+   0.147222  -0.144444   0.063889
+  -0.061111   0.022222   0.105556
+  -0.019444   0.188889  -0.102778
+
+>> A * pinv(A)
+ans =
+
+  1.0000e+000  -1.2212e-014  6.3283e-015
+  5.5511e-017  1.0000e+000  -2.2204e-016
+  -5.9952e-015  1.2268e-014  1.0000e+000
+
+>> B = [1 1; 2 2];
+>> C = [1 1; 2 2];
+>> B * C
+ans =
+
+   3   3
+   6   6
+
+>> B .* C
+ans =
+
+   1   1
+   4   4
+
+>> t = [0:0.01:0.98];
+>> y1 = sin(2*pi*4*t);
+>> plot(t, y1)
+>> hold on;
+>> plot(t, y1 + 1)
+>> plot(t, y1 + sin(t), 'r')
+>> xlabel('time')
+>> ylabel('value')
+>> legend('sin','cos')
+>> title('sample')
+>> cd 'D:\Users\Windows10\Desktop\MachineLearning2'; print -dpng 'sample.png'
+>> close
+>> figure(1); plot(t, y1);
+>> figure(2); plot(t, y1 + 1);
+>> subplot(1, 2, 1) % Divides plot a 1*2 grid, access first element
+>> plot(t, y1)
+>> subplot(1, 2, 2);
+>> plot(t, y1 + 1)
+>> axis([0.5 1 -1 1])
+>> clf;
+>> A = magic(5)
+A =
+
+   17   24    1    8   15
+   23    5    7   14   16
+    4    6   13   20   22
+   10   12   19   21    3
+   11   18   25    2    9
+
+>> imagesc(A)
+>> imagesc(A), colorbar, colormap gray;
