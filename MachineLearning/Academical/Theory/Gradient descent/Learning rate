@@ -1,0 +1,7 @@
+Debugging gradient descent -> Make a plot with number of iterations and cost function.
+If choose good alpha, cost function decrease when number of iterations bigger.
+Suppose choose bad alpha.
+1) Alpha is too large.
+Cost fuction will be repeated or increase when number of iterations increase. -> Smaller alpha.
+2) Alpha is too small.
+Very slow convergence. Then, makes Alpha bigger.
