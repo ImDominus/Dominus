@@ -1,0 +1,7 @@
+Suppose predict home price using the gradient descent.
+x1 = size(0 ~ 2000 square feet), x2 = number of bedrooms(1~5)
+It makes gradient descent inefficiency. (takes long time)
+But, takes x1 := x1/2000, x2 := x2/5, much more faster gradient descent.
+In general, get every feature makes -1 <= xi <= 1 (not important).
+Use, mean normalization
+ -> xi := xi - mean(xi) / (sizeof(xi) or stdev(xi)). (ex x1 := (size - 1000 / 2000))
