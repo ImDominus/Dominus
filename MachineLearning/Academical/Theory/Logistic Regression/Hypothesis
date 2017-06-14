@@ -1,0 +1,6 @@
+Unlike Linear Regression, we want cost function 0 <= h(x) <= 1
+So, h(x) = theta(transpose)*x -> Suppose theta(transpose) * x = z
+then, using the sigmoid function, g(z) = 1 / (1 + exp(-z)) <- probability
+And -> P(y = 0|x;theta) + P(y = 1|y;theta) = 1
+Dicision Boundary means lines that separates the area y = 0 and y = 1
+To get precision regression, takes polynomial regression for theta. ex) theta = theta0 + theta1(x) + theta2(x^2)+ .. etc
