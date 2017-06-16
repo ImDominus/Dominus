@@ -1,0 +1,8 @@
+function [jVal, gradient] = costFunction(theta)
+  jVal = [...code to compute J(theta)...];
+  gradient = [...code to compute derivative of J(theta)...];
+end
+
+options = optimset('GradObj', 'on', 'MaxIter', 100);
+initialTheta = zeros(2,1);
+   [optTheta, functionVal, exitFlag] = fminunc(@costFunction, initialTheta, options);
