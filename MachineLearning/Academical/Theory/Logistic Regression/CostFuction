@@ -1,0 +1,9 @@
+Cannot use the same cost function that we use for linear regression.
+Logistic Function will cause the output to be wavy.
+It cause many local minimum So can't use gredient descent. (not convex)
+instead, use that -> (logistic regression -> 1 / (1 + exp ** (θ * x))
+J(θ) = (1/m)∑Cost(h(x), y)
+Cost(h(x), y) = -log(h(x)), if y = 1
+Cost(h(x), y) = -log(1 - h(x)) if y = 0
+So, Cost(h(x), y) = -ylog(h(x)) - (1 - y)log(1-h(x)) (always y = 0, y = 1) in two case.
+To fit parameters θ, minimize J(θ).
