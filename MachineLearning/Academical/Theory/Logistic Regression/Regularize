@@ -1,0 +1,4 @@
+Same as Linear Regression
+
+θ(0) := θ(0) - a/m * ∑(h(x) - y)*x(0)
+θ(j) := θ(j) - a * ((1 / m) * ∑(h(x) - y)*x(j) + λ/m * θ(j)) (j != 0)
