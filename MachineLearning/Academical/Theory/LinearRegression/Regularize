@@ -1,0 +1,13 @@
+for minimize((1/2m) * (∑(h(x(i))−y(i)) ** 2 + λ∑θ**2)
+
+1. Gradient Descent
+θ(0) := θ(0) - a/m * ∑(h(x) - y)*x(0)
+θ(j) := θ(j) - a * ((1 / m) * ∑(h(x) - y)*x(j) + λ/m * θ(j)) (j != 0)
+     := θ(j)(1 - a * λ / m) - a * ((1 / m) * ∑(h(x) - y)*x(j)
+     
+2. Normal equation
+In general,
+θ = (X(tranpose)X)(-1)X(transpose)y
+Using the Regularize,
+θ = (X(transpose)X + λ*L)(-1)X(transpose)y,
+L is indentical matrix but, not (1,1). L(1, 1) = 0.
