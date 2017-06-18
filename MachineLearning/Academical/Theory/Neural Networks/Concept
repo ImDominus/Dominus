@@ -1,0 +1,33 @@
+For mimic human brain.
+Neurons commuicate with other neurons(using electricity).
+that means, we can implement like
+(x0)-| <- 'bias unit'
+x1---|
+x2---|---->result -> h(x)  -> h(x) = sigmoid(Θ*X)
+x3---|
+Sigmoid(logistic) activation function
+
+Treat
+ai(j)= "activation" of unit i in layer j
+Θ(j)=matrix of weights controlling function mapping from layer j to layer j+1
+
+Example
+|x0|     |a1(2)|
+|x1| ->  |a2(2)| -> h(x)
+|x2|     |a3(2)|
+|x3|
+
+Then, activation nodes will
+a1(2) = g(Θ(10)(1)x0 + Θ(11)(1)x1 + Θ(12)(1)x2 + Θ(13)(1)x3)
+a2(2) = g(Θ(20)(1)x0 + Θ(21)(1)x1 + Θ(22)(1)x2 + Θ(23)(1)x3)
+a3(2) = g(Θ(30)(1)x0 + Θ(31)(1)x1 + Θ(32)(1)x2 + Θ(33)(1)x3)
+h(x) = a1(3) = g(Θ(10)(2)a0(2) + Θ(11)(2)a1(2) + Θ(12)(2)a2(2) + Θ(13)(2)a3(2))
+
+If network has s(j) units in layer j and s(j+1) units in layer j+1, then Θ(j) will be of dimension 
+s(j+1)×(s(j)+1).
+
+layer 1 has 2 input nodes, layer 2 has 4 activation ondes.
+Then, Θ(1) will 4 * 3 dimesion, because s(j) = 2, s(j + 1) = 4
+
+Using vectorized implementation,
+a(2) = g(Θ1*x)
