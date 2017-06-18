@@ -1,0 +1,15 @@
+x1---|
+x2---|---->result -> h(x)
+x3---|
+Let's treat x1 = 1(bias varible)
+if Θ(1) = [-30, 20, 20], (sigmoid(4.6) = 0.99, sigmoid(-4.6) = 0.01)
+h(x) = sigmoid(-30 + 20x2 + 20x3)
+x2   x3   result
+0    0    0(near)
+0    1    0
+1    0    0
+1    1    1
+That's AND gate. Not using actual AND gate, using the small neural network.
+if Θ(1) = [-10, 20, 20] -> that's OR gate.
+if input has 2 variable(1, x1), h(x) = g(10 - 20x1) -> that's NOT gate.
+XOR -> NOT((x1 NAND x2) OR (x1 AND x2))
