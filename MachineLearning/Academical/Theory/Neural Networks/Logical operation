@@ -13,3 +13,5 @@ That's AND gate. Not using actual AND gate, using the small neural network.
 if Θ(1) = [-10, 20, 20] -> that's OR gate.
 if input has 2 variable(1, x1), h(x) = g(10 - 20x1) -> that's NOT gate.
 XOR -> NOT((x1 NAND x2) OR (x1 AND x2))
+
+Multiple output units -> One vs all
