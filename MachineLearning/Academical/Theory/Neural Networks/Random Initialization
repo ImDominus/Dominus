@@ -1,0 +1,14 @@
+Initializing all theta weights to zero does not work with neural networks.
+When we backpropagate, all nodes will update to the same value repeatedly.
+Instead we can randomly initialize our weights for our Θ matrices using the following method:
+
+Hence, we initialize each Θ to a random value between [−ϵ,ϵ].
+Using the below formula guarantees that we get the desired bound.
+The same procedure applies to all the Θ's. 
+Below is some working code you could use to experiment.
+
+If the dimensions of Theta1 is 10x11, Theta2 is 10x11 and Theta3 is 1x11.
+Theta1 = rand(10,11) * (2 * INIT_EPSILON) - INIT_EPSILON;
+Theta2 = rand(10,11) * (2 * INIT_EPSILON) - INIT_EPSILON;
+Theta3 = rand(1,11) * (2 * INIT_EPSILON) - INIT_EPSILON;
+(Note: the epsilon used above is unrelated to the epsilon from Gradient Checking)
