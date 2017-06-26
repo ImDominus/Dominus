@@ -1,0 +1,8 @@
+Gradient checking will assure that back propagation works as intended.
+with very small ϵ, we can take
+(d/dΘ)J(Θ) = (J(Θ + ϵ) - J(Θ - ϵ)) / 2 * ϵ
+with multiple theta matrices,
+(d/dΘk)J(Θ) = (J(Θ1, Θ2, ...., Θk + ϵ, ..... , Θn) - J(Θ1, Θ2, ...., Θk - ϵ, ..... , Θn)) / (2 * ϵ)
+
+Once you have verified once that your backpropagation algorithm is correct, you don't need to compute gradApprox again.
+The code to compute gradApprox can be very slow.
