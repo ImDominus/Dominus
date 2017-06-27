@@ -1,0 +1,6 @@
+Our goal is
+J(Θ) makes minimum.
+That is, we want to minimize our cost function J using an optimal set of parameters in theta.
+In this section we'll look at the equations we use to compute the partial derivative of J(Θ):
+∂/∂(Θ(l)i,j)J(Θ)
+To do so, we use the following algorithm:
