@@ -1,0 +1,2 @@
+- simply adds up the logistic regression costs calculated for each cell in the output layer
+- simply adds up the squares of all the individual Θs in the entire network. (regularization)
