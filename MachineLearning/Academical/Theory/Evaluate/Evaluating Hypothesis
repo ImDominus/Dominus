@@ -1,1 +1,18 @@
+Once we have done some trouble shooting for errors in our predictions by: 
+- Getting more training examples
+- Trying smaller sets of features
+- Trying additional features
+- Trying polynomial features
+- Increasing or decreasing λ
 
+A hypothesis may have a low error for the training examples but still be inaccurate (because of overfitting).
+Thus, to evaluate a hypothesis, given a dataset of training examples, we can split up the data into two sets: a training set and a test set.
+Typically, the training set consists of 70 % of your data and the test set is the remaining 30 %. 
+
+The test set Error:
+1. linear regression -> J(Θ) = 1/2m * sum((h(x) - y)**2)
+2. logistic regreesion ->
+  (h(x) >= 0.5 and y = 1) or (h(x) < 0.5 and y = 1)  -> err(h(x), y) = 1
+  otherwise -> err(h(x), y) = 0
+
+Then, Test Error = 1/m * sum(err(h(x), y))
