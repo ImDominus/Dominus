@@ -4,3 +4,10 @@ That is, we want to minimize our cost function J using an optimal set of paramet
 In this section we'll look at the equations we use to compute the partial derivative of J(Θ):
 ∂/∂(Θ(l)i,j)J(Θ)
 To do so, we use the following algorithm:
+1. Set a(1) = x
+2. Perform forward propagation to compute a(l) for l = 1, 2, ... l
+3. Using y, compute delta(l) = a(l) - y
+4. Compute delta(l - 1, l - 2, .... 2) using delta(n) = ((Θ(n)'*delta(n + 1)).*a(n).*(1 - a(n))
+(g'(a(n)) = a(n) .* (1 - a(n))
+5. d/dΘ(l, i, j) J(Θ) = 1/m(a(n)*delta(n + 1) + lambda*theta) (j != 0)
+   d/dΘ(l, i, j) J(Θ) = 1/m(a(n)*delta(n + 1) (j == 0)
