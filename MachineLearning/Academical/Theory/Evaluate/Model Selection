@@ -1,0 +1,11 @@
+One way to break down our dataset into the three sets is:
+Training set: 60%
+Cross validation set: 20%
+Test set: 20%
+
+We can now calculate three separate error values for the three different sets using the following method:
+Optimize the parameters in Θ using the training set for each polynomial degree.
+Find the polynomial degree d with the least error using the cross validation set.
+Estimate the generalization error using the test set with 
+Jtest(Θ(d)), (d = theta from polynomial with lower error);
+This way, the degree of the polynomial d has not been trained using the test set.
