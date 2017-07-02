@@ -1,0 +1,10 @@
+- We need to distinguish whether bias or variance is the problem contributing to bad predictions.
+- High bias is underfitting and high variance is overfitting.
+- Ideally, we need to find a golden mean between these two.
+
+High bias (underfitting)
+both Jtrain(Θ) and JCV(Θ) will be high.
+Also, JCV(Θ)≈Jtrain(Θ).
+
+High variance (overfitting)
+Jtrain(Θ) will be low and JCV(Θ) will be much greater than Jtrain(Θ).
