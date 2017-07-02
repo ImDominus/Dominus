@@ -1,0 +1,4 @@
+The recommended approach to solving machine learning problems is to:
+1. Start with a simple algorithm, implement it quickly, and test it early on your cross validation data.
+2. Plot learning curves to decide if more data, more features, etc. are likely to help.
+3. Manually examine the errors on examples in the cross validation set and try to spot a trend where most of the errors were made.
