@@ -1,0 +1,14 @@
+X = training set
+y = Error
+
+Experiencing high bias
+Low training set size: causes Jtrain(Θ) to be low and JCV(Θ) to be high.
+Large training set size: causes both Jtrain(Θ) and JCV(Θ) to be high with Jtrain(Θ)≈JCV(Θ).
+If a learning algorithm is suffering from high bias, getting more training data will not (by itself) help much.
+
+Experiencing high variance:
+Low training set size: Jtrain(Θ) will be low and JCV(Θ) will be high.
+Large training set size: Jtrain(Θ)
+increases with training set size and JCV(Θ) continues to decrease without leveling off.
+Also, Jtrain(Θ) < JCV(Θ) but the difference between them remains significant.
+If a learning algorithm is suffering from high variance, getting more training data is likely to help.
