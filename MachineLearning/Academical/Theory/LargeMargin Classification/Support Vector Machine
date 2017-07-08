@@ -1,0 +1,4 @@
+unlike Logistic regression, 
+minimize = C * ∑(ycost1(θx) + (1 - y)cost0(θx)) + 1/2∑θ**2
+H(x) = 1 (if θx >= 0), otherwise 0
+That function is similar (|x| + x)
