@@ -2,3 +2,7 @@ unlike Logistic regression,
 minimize = C * ∑(ycost1(θx) + (1 - y)cost0(θx)) + 1/2∑θ**2
 H(x) = 1 (if θx >= 0), otherwise 0
 That function is similar (|x| + x)
+
+In real Support Vector Machine,
+if y = 1, we want θx >= 1,   (cost1 is similar |x - 1| - (x - 1))
+if y = 0, we want θx <= -1   (cost2 is similar |x + 1| + (x + 1))
