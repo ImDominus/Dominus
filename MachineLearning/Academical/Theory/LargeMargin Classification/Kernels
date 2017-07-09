@@ -1,0 +1,17 @@
+Given x, compute new feature depending on proximity to landmarks l1, l2, l3
+fn = similarity(x, fn) = exp(-(ln - x) ** 2 / (2 * o ** 2) = exp(-∑(ln - x) ** 2 / (2 * o ** 2)
+similarity function called kernel function (Gaussian)
+
+If fn == x, fn = 1
+elif fn <> x(very far), fn = 0
+Then, if θ0 + θ1f1 + θ2f2 + ... + θnfn >= 0, predict 1
+
+but how we can choose landmarks?
+Choose l1 = x1, l2 = x2 .....
+then,
+minimize = C * ∑(ycost1(θf) + (1 - y)cost0(θf)) + 1/2∑θ**2
+
+Larger C -> Lower bias, higher variance
+Smaller C -> Lower variance, higher bias
+
+Larger o ** 2 -> Higher bias, lower variance
