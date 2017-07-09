@@ -1,0 +1,22 @@
+Unlike supervised learning, unpervised learning doesn't have y.
+So, using clusting algorithm
+K - means Algorithm
+Randomly initialize K cluster centroids u1, u2, ... uk
+Repeat:
+(for i = 1:m;
+    c(i) := index (from 1 to K) of cluster centroid closest to x(i)
+ for k = 1:K
+    uk := average(mean) of points assigned to cluster k)
+    
+Cost Function:
+J(c1, c2, ... , cm, u1, u2, ..... uk) = 1/m * ∑(x(i) - uc) ** 2
+uc -> cluster centroid of cluster to which example x has been assigned.
+
+Random initialization:
+takes start Uk = xk, .... etc.
+But, this may fall to local optima.
+
+Choosing number of cluster:
+Elbow mathod:
+plot x = number of cluster, y = cost function: then, this is decrese function
+maybe suddenly decrease length is slower. That is nice for number of clusters.
