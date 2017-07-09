@@ -1,0 +1,6 @@
+averaged squared projection error: 1/m ∑ (x - xapprox) ** 2
+total variation in the data : 1/m ∑ x ** 2
+Typically, choose k to be smallest value so that
+Then, ∑ (x - xapprox) ** 2 / ∑ x ** 2 <= 0.01 (1%)
+99% of variance is retained (p - value)
+smallest choose k
