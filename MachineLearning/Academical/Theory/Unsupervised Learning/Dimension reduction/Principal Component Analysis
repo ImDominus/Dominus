@@ -1,0 +1,11 @@
+Data preprocessing
+Training set: x1, x2, ... xm
+Preprocessing(featurescaling / mean normalization):
+uj = 1/m * ∑xj(i)
+Then, Replace each xj(i) with xj - yj / oj
+
+Reduce data from n-dimensions to k-dimenstions.
+Compute 'covariance matrix':
+∑ = 1/m∑(x(i)x(i)') -> n * n matrix
+Compute 'eigenvectors' of matrix ∑:
+[U, S, V] = svd(Sigma);
