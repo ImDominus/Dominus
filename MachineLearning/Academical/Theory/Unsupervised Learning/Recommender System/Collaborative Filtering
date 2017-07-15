@@ -1,0 +1,12 @@
+Suppose, [1, 2, 3, 4] is person (to θ1, θ2, ...), x1, x2 is correlations part but don't know
+For example,
+Movie	1	2	3	4	x1  x2
+a	    5	5	0	0	?   ?
+b	    5	?	?	0	?   ?
+c	    ?	4	0	?	?   ?
+d	    0	0	5	4	?	  ?
+e	    0	0	5	?	?	  ?
+
+If person's gives a information θ, (ex, θ1 = [0 5 0], θ2 = [0 5 0], θ3 = [0 0 5], θ4 = [0 0 5])
+a(x1) -> 1, a(x2) -> 0, d(x1) -> 0, d(x2) -> 1
+Using the Linear Regression, we can get x1, x2
