@@ -1,0 +1,7 @@
+For every features xi, get the normal distribution.
+Then,
+p(x) = p(x1; m1, ρ1**2) * p(x2; m2, p2 **2)....p(xn; mn, ρn ** 2)
+= product(p(xj; mj, ρj ** 2))
+Then, Anomaly if p(x) < ε.
+
+Then, do real_number evaluation.
