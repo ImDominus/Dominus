@@ -1,0 +1,7 @@
+Gaussian(Normal) distribution (mean = m, variance = ρ ** 2)
+-> X -> N(m, ρ ** 2)
+
+Then, p(x; m, ρ ** 2) = 1 / (sqrt(2π) * ρ) * exp(- (x - m) ** 2 / (2 * ρ ** 2)
+If, m == 0, ρ == 1,
+p(z; m, ρ ** 2) = 1 / (sqrt(2π)) * exp(-(z) ** 2 / (2)
+if z == 1.96, p(z) = 0.475
