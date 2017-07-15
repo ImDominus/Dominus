@@ -1,0 +1,10 @@
+Suppose, [1, 2, 3, 4] is person (to θ1, θ2, ...), x1, x2 is correlations part(ex- romanse)
+For example,
+Movie	1	2	3	4	x1	 x2
+a	    5	5	0	0	0.9	 0
+b	    5	?	?	0	1	   0.01
+c	    ?	4	0	?	0.99 0
+d	    0	0	5	4	0.1	 1
+e	    0	0	5	?	0	   0.9
+Then, θ1 = [0, 5, 0] (or [0, 4.75, 0])
+After, Using Linear Regression.
