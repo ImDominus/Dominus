@@ -1,5 +1,2 @@
 # Dominus
-CS practice
-
-
-Remember... Practice
+This Github page have Knowledge which I have.
