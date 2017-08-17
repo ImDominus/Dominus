@@ -1,1 +1,1 @@
-Sigmoid Function = 1 / (1 + e ** - θx)
+Sigmoid Function = 1 / (1 + e ** - (wx + b))
