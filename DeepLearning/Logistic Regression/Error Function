@@ -1,0 +1,4 @@
+Squared error function -> 1/2 * (y' - y) ** 2
+Logistic error function -> -(ylogy' + (1 - y)log(1 - y')) (In Logistic Regression, this is convex function)
+If y == 1, L(y', y) = -logy'
+If y == 0, L(y', y) = -log(1 - y')
