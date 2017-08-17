@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Start</title>
+  </head>
+  <body>
+    <header>
+      <h1><a href="http://localhost/">JavaScript</a></h1>
+    </header>
+    <nav>
+      <ol>
+        <li><a href="http://localhost/JavaScript.html">JavaScript?</a></li>
+        <li><a href="http://localhost/cv.html">Constant, variable</a></li>
+      </ol>
+    </nav>
+    <article>
+      <h2>Constant, variable</h2>
+        variable
+      <ul>
+        <li>Changeable</li>
+        <li>Not Constant</li>
+      </ul>
+  </body>
+</html>
+
+header -> header
+nav -> navigation
+article -> article
+a href -> link
