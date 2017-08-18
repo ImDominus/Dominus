@@ -1,0 +1,5 @@
+Suppose, z = wx + b, a = sigmoid(z), error funcion = L(a, y)
+Then, dL/dz = dL/da * da/dz(by Chain rule)
+dL/da = (-y / a + (1 - y) / (1 - a))
+da/dz = (a * (1 - a)), Using easy calculus
+Then, dL/dz = a - y
