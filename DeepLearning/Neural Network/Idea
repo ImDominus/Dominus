@@ -1,0 +1,15 @@
+
+           
+x1         a11
+
+x2         a12           a22         y
+
+x3         a13
+
+
+a1 = w1.T * x + b1
+a2 = w2.T * a1 + b2 == y
+
+x -> input layer
+a1 -> hidden layer
+a2 -> output layer
