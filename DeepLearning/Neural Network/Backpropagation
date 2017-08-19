@@ -1,0 +1,11 @@
+There are two layer in network, a1, a2.
+
+Then
+dz2 = a2 - y
+dw2 = dz2 * a1.T
+db2 = dz2
+and, da1 -> (a2 - y) * w2
+(because, dL/da1 = dL/dz2 * dz2/da1 = (a2 - y) * w2)
+dz1 = w2 * dz2 * g1'(z1) (by chain rule) = (a2 - y) * w2 * (a2 * (1 - a2))
+dw1 = dz1 * x.T
+db1 = dz1
