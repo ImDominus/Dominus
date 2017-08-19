@@ -1,0 +1,6 @@
+1. sigmoid function
+g(z) = 1 / (1 + exp(-z)), dg = g(z) * (1 - g(z))
+2. tanh function
+g(z) = (exp(z) - exp(-z)) / (exp(z) + exp(-z)), dg = 1 - g(z) ** 2
+3. ReLU function
+g(z) = max(0, z), dg = (if z < 0, 0, otherwise, 1)
