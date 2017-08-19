@@ -1,0 +1,17 @@
+Forward propagation
+In general, z[i] = w[i] * a[i - 1] + b[i]
+a[i] = g[i](z[i])
+
+Back propagation
+In general, dz[i] = w[i + 1].T * dz[i + 1] * g[i]'(z[i])
+dW[i] = dz[i] * a[i - 1].T
+db[i] = dz[i]
+
+
+Dimensions of W[i]
+-> W[i] = (n[i], n[i - 1]) (size of layer), b[i] = (n[i], 1)
+
+Then, Use Python
+dZ[i] = dot(dW[i + 1].T * dZ[i + 1])) * g'[i + 1](Z[i])
+dW[i] = 1/m * dz[i] * A[i].T
+db[i] = 1/m * np.sum(dz[i], axis = 1, keepdims = True)
