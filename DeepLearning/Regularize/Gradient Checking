@@ -1,0 +1,3 @@
+Check with f(x + c) - f(x - c) / 2 * c (c is very small value) and dw
+
+It will reduces errors of my code
