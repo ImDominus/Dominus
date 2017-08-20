@@ -1,0 +1,6 @@
+In neural network,
+cost = 1/m * (sum(L(a, y))
+if plus all weight factor ** 2,
+cost = 1/m * (sum(L(a, y)) + lambda / 2m * sum(sum(w ** 2))
+then in gradient descent,
+wl := wl - alpha * (dwl + lambda / m * wl)
