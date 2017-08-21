@@ -1,0 +1,7 @@
+moving average
+vt = B vt - 1 + (1 - B) * wt
+if B == 0.9, t = 100,
+v100 = 0.9v99 + 0.1w100
+v99 = 0.9v98 + 0.1w99
+Then, v100 = 0.1w100 + 0.09w99 + 0.1 * 0.9^2w98........
+recent data is powerful then others.
