@@ -1,0 +1,8 @@
+On iteration t:
+  Compute dw, db
+  vdw = Bvdw + (1 - B)dw
+  vdb = Bvdb + (1 - B)db
+  w = w - alpha*vdw
+  b = b - alpha*vdb
+Bvdw -> break, (1 - B)dw -> acclation
+if low
