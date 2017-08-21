@@ -1,0 +1,6 @@
+On iteration t:
+  Compute dw, db
+  Sdw = BSdw + (1 - B)dw ** 2
+  Sdb = BSdb + (1 - B)db ** 2
+  w = w - alpha*dw / sqrt(Sdw)
+  b = b - alpha*vdb / sqrt(Sdb)
