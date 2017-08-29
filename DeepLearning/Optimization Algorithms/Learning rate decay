@@ -1,0 +1,10 @@
+a = 1 / (1 + decay_rate * n) * a0
+a = 0.2, decay_rate = 1 -> n = 1, a = 0.1, ... ...  n = 4, a = 0.04
+
+exponentialy decay
+a = 0.95 ** n * a0
+
+.....
+ 
+ 
+etc
