@@ -1,0 +1,17 @@
+Combine momentum, RMSprop
+Set Vdw = 0, Sdw = 0, Vdb = 0, Sdb = 0
+On iteration t:
+compute dw, db using mini-batch
+Vdw = B1Vdw + (1 - B1)dw, Vdb = B1Vdb + (1 - B1)db <- "momentum"
+Sdw = B2Sdw + (1 - B2)dw ** 2, Sdb = B2Sdb + (1 - B2)db <- "RMSprop"
+Vdw_correction = Vdw / (1 - B1 ** t), Vdb_correction = Vdb / (1 - B1 ** t)
+Sdw_correction = Sdw / (1 - B2 ** t), Sdb_correction = Sdb / (1 - B2 ** t)
+w := w - a * Vdw_correction / sqrt(Sdw_correction + e)
+b := b - a * Vdb_correction / sqrt(Sdb_correction + e)
+
+a -> need to tuning
+b1 : 0.9 (dw)
+b2 : 0.999 (dw**2)
+e : 10 ** -8
+
+Adam : adaption moment estimation
