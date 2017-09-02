@@ -1,0 +1,8 @@
+In Neural Network Z (before apply acitivations function)
+
+u = 1 / m * sum(z)
+o**2(variance) = 1 / m * (sum(z - u) ** 2)
+
+Znorm = z - u / (o**2 + smallval) ** (1/2)
+Then, newz = gamma * znorm + B (linear function, gamma and beta are learnable parameters)
+(gamma = (o ** 2 + smallval) ** (1 / 2), B = u
