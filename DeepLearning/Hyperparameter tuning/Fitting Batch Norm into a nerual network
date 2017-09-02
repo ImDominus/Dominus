@@ -1,0 +1,6 @@
+for t = 1 .... num Minibatches
+  compute forward an X
+     each hidden layer, use Bn to zl with z'[l]
+  Us backprop to compute dW, dB, do
+  update parameters using gradient descent
+  
