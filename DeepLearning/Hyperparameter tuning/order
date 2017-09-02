@@ -1,0 +1,16 @@
+Tier 1
+alpha
+
+Tier2
+Beta (starts with 0.9)
+hidden units
+minibatch size
+
+Tier3
+layers
+learning rate decay
+
+Tier4
+Beta1, Beta2, epsilon (starts with 0.9, 0.999, 10 ** -8)
+
+And Try random Value.
