@@ -1,0 +1,7 @@
+Fit training set well on cost function (bigger network, Adam.. etc)
+
+Fit dev set well on cost function (Regulization, Bigger training set....)
+
+Fit test set well on cost function (Bigger dev set)
+
+Performs well in real world
