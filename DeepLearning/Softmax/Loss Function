@@ -1,0 +1,19 @@
+y' -> caculated, y -> real
+Loss(y', y) = =sum (y * log y')
+if y = [0, 1, 0] -> loss = -y2 * log y2'
+
+Derivative of softmax
+a[i] = e ** z[i] / sum(e ** z[k])
+Then,
+L = -sum(y * log y')
+And,
+da[i] / dz[i] = (e ** z[i] * sum(e ** z[k]) - e ** z[i] * e ** z[i]) / (sum(e ** z[k]) ** 2
+              = (e ** z[i] / sum(e ** z[k]) * (1 - e ** z[i] / sum(e ** z[k]))
+              = a[i] * (1 - a[i])
+And,
+da[i] / dz[j] = -a[i]*a[j] (if i != j)
+
+Finally,
+dL / dz[i] = - sum(yk * dloga[k] / dz[i]) = - sum(yk / a[k] * da[k] / dz[i])
+           = -yi * (1 - a[i]) - sum(yk / a[k] * -(a[k]a[i]) <- i != j
+           = a[i] * sum(yk) - yi = a[i] - yi (because, sum(yk == 1))
