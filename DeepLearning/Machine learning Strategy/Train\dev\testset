@@ -1,0 +1,6 @@
+Split early era,
+Distribute 60% train, 20% dev, 20% test set
+
+But if have very large dataset, 98% train, 1% dev set, 1% test set is okay.
+
+Set test set to big enought to give high confidence in the overall performance of your system.
