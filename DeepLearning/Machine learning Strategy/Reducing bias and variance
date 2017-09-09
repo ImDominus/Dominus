@@ -1,0 +1,15 @@
+Human_level
+-> avoidable bias
+Training error
+-> variance
+Dev set
+
+To avoidable bias
+- Train bigger model
+- Train longer/better optimization algorithms (momentum, RMSpro, Adam... etc)
+- Neural Network architecture / hyperparameters search (RNN, CNN, etc)
+
+To avoidable variance
+- More data
+- Regularization (L2, dropout, data augumatiaion)
+- Neural Network architecture / hyperparameters search (RNN, CNN, etc)
