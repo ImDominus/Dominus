@@ -1,0 +1,8 @@
+examples of cats
+
+Precision : If example recognized as cat, what % actually are cats?
+Recall : what % of actual cats are collectly.
+
+F1 score = 2 / ( (1 / precision) + (1 / recall
+
+Choose higer F1 score classfier
