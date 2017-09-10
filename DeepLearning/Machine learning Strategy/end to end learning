@@ -1,0 +1,15 @@
+Speech recognition example
+Trditional
+audio -> feature -> phonemes -> words -> transcript
+modern (end to end)
+audio ---------------------------------> transcript
+If have large dataset, use the modern way.
+else, use trditional way
+
+Pros:
+- Let the data speak
+- Less hand-designing of components needed
+
+Cons:
+- May need large amount of data
+- Excludes potentially useful hand-designed components
