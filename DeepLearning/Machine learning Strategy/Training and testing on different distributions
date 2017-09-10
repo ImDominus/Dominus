@@ -1,0 +1,12 @@
+If you services mobile app which clasify cat.
+
+You have cat picture download from internet <- 200,000
+And mobile <- 10,000
+
+Not just same distribution test, dev, train set. (internet is not target)
+Then,
+Train set : 205,000 (200,000 Internet set, 5,000 mobile set)
+dev set : 2,500
+test set : 2,500
+
+It will be better performance
