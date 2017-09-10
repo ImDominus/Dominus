@@ -1,0 +1,9 @@
+Let's make train-dev set
+train - dev set is that it have same distribution, but not used for train.
+
+If gap train-dev error with dev error is very large, it is data mismatch.
+But how to addressing data mismatch?
+
+1. Carry out manual error analysis to try to understand difference between training and dev/test sets.
+2. Make training data more similar; or collect more data similar to dev/test sets.
+3. Artificial data synthesis
