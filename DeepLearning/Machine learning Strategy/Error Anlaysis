@@ -1,0 +1,19 @@
+Cat classifier
+
+Error analysis:
+- Get ~100 mislabeled dev set examples.
+- Count up how many are dogs.
+
+Evaluate multiple ideas in parallel
+Ideas for cat detection:
+- Fix pictures of dogs being recognized as cats
+- Fix great cats (lions, panthers, etc...) being misrecognized
+- Improve performance on blurry images
+
+Image Dog Great Cats Blurry Comments
+1     O
+2                     O
+3          O           O      rainy day
+...
+% of  8     43        62
+total
