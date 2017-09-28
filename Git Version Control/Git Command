@@ -1,0 +1,2 @@
+git clone URL <- cloning Git
+git diff commit1, commit2 <- Compare diffrent commit
