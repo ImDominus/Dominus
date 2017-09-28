@@ -1,2 +1,4 @@
 git clone URL <- cloning Git
 git diff commit1, commit2 <- Compare diffrent commit
+git checkout commit <- return to previous version
+git reflog <- return to last commits
