@@ -1,0 +1,9 @@
+HDFS is Hadoop Distributed File System.
+Suppose file mydata.txt with 150mB.
+If mydata.txt is loaded into HDFS, it's split into chunks we called block. Defalut value is 64mB.
+Then, mydata.txt will be distributed by 64mB, 64mb, 22mB blocks.
+Each blocks will get stored on diffrent node in the clusters.
+The information is saved in NameNode (known as metaData).
+
+To prevent lost data, Hadoop replicates each blocks and randomly save other nodes.
+Furthermore, prevent lost NameNode, save another namenode to network.
