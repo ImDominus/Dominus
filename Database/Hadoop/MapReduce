@@ -1,0 +1,7 @@
+MapReduce concepts is HashTables. (key, value)
+
+Mappers -> Intermediate records (key, value) (working with distributed)
+EX) LA 350, NYC 12 / LA 12, Boston 23 / Boston 11, LA 23 / .......
+Then Shuffle and sort
+Reducers gets the key and list of all the values.
+EX) LA 240, NYC 23 / Boston 123.......
