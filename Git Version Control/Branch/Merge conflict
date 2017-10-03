@@ -1,0 +1,7 @@
+Suppose original version files (master branch) have A, B, C function.
+Jake has files in branch1 from master branch have A, B', C function.
+Sally has files in branch2 from master branch have A, B'', C function.
+
+Maybe occur problem in merging jake's, sally's files.
+It is said merge conflict.
+To resolving merge conflict, meeting each others or applying each of changes
