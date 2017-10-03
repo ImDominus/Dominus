@@ -1,4 +1,4 @@
-# L is contain 0 to 9 digit. white fuction which finds the largest number that can bee made
+# L is contain 0 to 9 digit. white fuction which finds the largest number that can be made
 # from some of all of these digits and is divisible by 3
 # if l = [3, 1, 4, 1] => 4311,  l = [3, 1, 4, 1, 5, 9] => 94311
 
