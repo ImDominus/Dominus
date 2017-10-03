@@ -1,7 +1,8 @@
 1. Download that files to Home Directory (git bash home)
 2. Download Sublime text
 3. In git bash, type
-git config --global core.editor "'C:/Program\ Files/Sublime\ Text\ 3/sublime_text.exe' -n -w"
-git config --global push.default upstream
-git config --global merge.conflictstyle diff3
+- git config --global core.editor "'C:/Program\ Files/Sublime\ Text\ 3/sublime_text.exe' -n -w"
+- And change .gitconfig file(where are in home directory) -> editor = "'C:/Program Files/Sublime Text 3/subl.exe' -n -w"
+- git config --global push.default upstream
+- git config --global merge.conflictstyle diff3
 4. restart git bash
