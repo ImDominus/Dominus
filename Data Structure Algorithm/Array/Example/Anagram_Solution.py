@@ -27,4 +27,4 @@ print(anagram('dog','god'))
 print(anagram('clint eastwood','old west action'))
 print(anagram('aa','bb'))
 
-##Using O(nlogn)
+##Time complexity : O(nlogn)
