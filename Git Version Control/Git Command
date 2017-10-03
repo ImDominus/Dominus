@@ -8,3 +8,9 @@ ls -a <- view files even if files is hidden
 git status <- view git status
 git init <- build new git repository
 git add <- add files to staging area (want to make commit)
+git commit <- make files in staging area to commit
+
+
+git diff <- Compare Working directory and staging area
+git diff --staged <- Compare Staging area and latest Commit
+git reset --hard <- Delete Modified Contents
