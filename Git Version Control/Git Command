@@ -15,3 +15,9 @@ git commit <- make files in staging area to commit
 git diff <- Compare Working directory and staging area
 git diff --staged <- Compare Staging area and latest Commit
 git reset --hard <- Delete Modified Contents
+
+git branch <- view all git branch
+git branch newname <- build new branch
+git log --graph --oneline <- visualize branch structure
+git merge master branch_name <- merge master and branch
+git show commit1 <- Compare commit1 and parent commit
