@@ -1,0 +1,16 @@
+Hadoop has 5 daemons.They are NameNode, DataNode, Secondary NameNode, JobTracker and TaskTracker.
+
+NameNode
+It stores the Meta Data about the data that are stored in DataNodes.
+
+DataNode
+It stores the actual Data.
+
+Secondary NameNode
+It is the backup of namenode and it just contains entire metadata of data nodes like data node address, properties and block report of each data node.
+
+JobTracker
+Job Tracker is a master which creates and runs the job. JobTracker splits works to mapper or reducer
+
+TaskTracker
+TaskTracker is a slave and runs on data node. TaskTracker runs the tasks and reports the status of task to JobTracker. (real task)
