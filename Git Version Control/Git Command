@@ -26,3 +26,4 @@ git remote <- view remote control url's name
 git remote -v <- git remote + fetch url, push url
 git push name commit <- upload commit to name
 git pull name commit <- download commit from name
+git fetch name <- build new branch from name'url commit
