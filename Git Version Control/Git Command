@@ -21,3 +21,8 @@ git branch newname <- build new branch
 git log --graph --oneline <- visualize branch structure
 git merge master branch_name <- merge master and branch
 git show commit1 <- Compare commit1 and parent commit
+
+git remote <- view remote control url's name
+git remote -v <- git remote + fetch url, push url
+git push name commit <- upload commit to name
+git pull name commit <- download commit from name
