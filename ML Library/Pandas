@@ -1,0 +1,11 @@
+import pandas as pd
+
+Read CSV Files
+data_set = pandas.read_csv('filesname.csv')
+
+Add colume
+data_set['new'] = data_set['old'] + data_set['old2']
+data_set.to_csv('newfilename.csv')
+
+DataFrame
+df = pd.DataFrame({'key1' : value1, 'key2' : value2, ...})
