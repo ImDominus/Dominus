@@ -1,0 +1,8 @@
+SELECT * FROM data_name; <- load all data_name
+SELECT name1, name2 From data_name <- load name1, name2 column from data_name
+LIMIT 20; <- only load 20 rows
+
+In python : q = """SELECT * FROM data_name;"""
+
+SELECT * FROM data_name WHERE column_name = value; <- load column_name'value in 
+SELECT a, b, sum(c) FROM data_name WHERE d > 40 GROUP BY a, b <- load data if d > 40, and grouping a, b with sum(c)
