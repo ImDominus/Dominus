@@ -1,0 +1,8 @@
+1. Partial Deletion
+ - Listwise Deletion
+   Delete particular data point from all analyses even if some useful values were present.
+ - Pairwise Deletion
+   using values when data are not missing.
+
+2. Impution
+ - It is the way replace the missing value.
