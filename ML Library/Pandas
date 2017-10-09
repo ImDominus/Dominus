@@ -12,3 +12,6 @@ df = pd.DataFrame({'key1' : value1, 'key2' : value2, ...})
 
 Describe data
 df = pd.describe()
+
+replace NA value
+df['column'] = df['column'].fillna(value)
