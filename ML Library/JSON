@@ -1,0 +1,6 @@
+import json
+import requests
+
+url = 'http://fdsjfoajofawjeofjawef.jfieojwf'
+data_set = requests.get(url).text
+data_set = json.loads(data_set)
