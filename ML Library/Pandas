@@ -9,3 +9,6 @@ data_set.to_csv('newfilename.csv')
 
 DataFrame
 df = pd.DataFrame({'key1' : value1, 'key2' : value2, ...})
+
+Describe data
+df = pd.describe()
