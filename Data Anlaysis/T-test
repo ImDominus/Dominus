@@ -1,0 +1,8 @@
+mu = mean
+sigma = standard deviation
+N = 
+
+Two sample t-test
+t = (mu1 - mu2) / (sigma1 ** 2 / N1 + sigma2 ** 2 / N2) ** (1 / 2)
+u = (sigma1 ** 2 / N1 + sigma2 ** 2 / N2) ** 2 / (sigma1 ** 4 / (N1 ** 2) / (N1 - 1) + sigma2 ** 4 / (N2 ** 2) / (N2 - 1))
+vi = Ni - 1 <- degrees of freedom
