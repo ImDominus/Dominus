@@ -1,0 +1,6 @@
+- scipy.stats
+import scipy.stats
+
+Getting T_test with two sample (Welch's t-test)
+scipy.stats.ttest_ind(a, b, axis = 0, equal_var = True, nan_policy = 'omit')
+-> return ((t - statisic), p-value)
