@@ -1,0 +1,5 @@
+data = yi
+prediction = fn
+average of data = y|
+
+R ** 2 = 1 - sum(yi - fi) ** 2 / sum(yi - y|) ** 2
