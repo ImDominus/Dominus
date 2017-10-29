@@ -1,0 +1,15 @@
+Data Type1. Numeric data
+ - A measurement (e.g. height, weight.. etc)
+ - Discrete and continous
+   - Discrete : whole numbers (e.g. 10, 34, 25)
+   - Continuous : any number within range (e.g. 250, 357, 511)
+   
+Data Type2. Categorical Data
+ - Represent characteristics (e.g. position, team, ...)
+ - Can take on numerical values, but they don't have mathmatical meaning.
+ - ordinal data
+   - categories with some orders or ranking
+
+Data Type3. Time-Series data
+ - Data collected via repeated measurements over time
+ - Ex: Average HR/players over years
