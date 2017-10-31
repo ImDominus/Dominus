@@ -1,0 +1,12 @@
+Problem
+STATES : S
+
+MODEL : T(s, a, s') ~ Pr(s| s, a) (before states, action, after states)
+
+ACTIONS : A(s), A
+
+REWARD : R(s), R(s, a), R(s, a, s')
+
+
+Solution
+POLICY : pi(s) -> a
