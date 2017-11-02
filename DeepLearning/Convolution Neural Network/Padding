@@ -1,0 +1,17 @@
+If using convolution filter, we have 2 problem.
+
+1. shrink output
+2. edge information is faded.
+
+To solve this problems, we can use padding.
+e.g.
+                                    0 0 0 0 0
+3 1 2                               0 3 1 2 0
+1 1 2              ->               0 1 1 2 0
+3 1 2                               0 3 1 2 0
+                                    0 0 0 0 0   (3 * 3 filter)
+                                  
+It will be preserve edge informations.
+
+Valid convolution : no padding
+Same convolution : padding
