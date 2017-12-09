@@ -1,6 +1,6 @@
 # Dominus
 This page is my personal portfolio page.
-If any problem or questions about my files or contents, contact me to E-mail or LinkedIn.
+If have any problem or questions about my files or contents, please contact me to E-mail or LinkedIn.
 
 E-mail: rudalsdldia2@gmail.com
 
