@@ -1,0 +1,3 @@
+1. Classical - equally likely (e.g. P(X = 4) = 1 / 6 in dice)
+2. Frequentist - relative frequency (e.g. P(X = 4) = 1 / 6 in dice(infinite squence))
+3. Bayesian - personal perspective (e.g. P(X = 4) = 2 / 23, from past result)
