@@ -1,0 +1,9 @@
+In practice, We don't know about x|p, distribution.
+
+Suppose, xi is independent,
+P(X = x|p) = P(X = x1|p, X = x2|p, X = x3|p, .... X = xn|p) = mul(P(X = x1|p), P(X = x2|p), P(X = x3|p), ...P(X = xn|p))
+P(X = x|p) <- Likelihood
+
+Maximize P(X = x|p).
+
+log(P(X = x|p)) -> log likelihood
