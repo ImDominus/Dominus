@@ -1,0 +1,6 @@
+1. X ~ binomial(n, p), f(x|p) = nCx * (p ^ x) * (1 - p) ^ (n - x)
+   E(X) = np, V(X) = np(1- p)
+2. X ~ Exponential(λ), f(x|λ) = λe ^ (-λx), x >= 0
+   E(X) = 1 / λ, V(X) = 1 / (λ ** 2)
+3. X ~ normal(μ, σ^2), f(x|μ, σ^2) = (sqrt(2piσ^2))^-1 * exp(-1/(2 * σ^2) * (x - μ) ^ 2)
+   E(X) = μ, V(X) = σ^2
