@@ -1,0 +1,8 @@
+E -> Expectation, Integral -> S
+
+1. S(from -∞ to ∞)f(x)dx = 1
+2. E(X) = S(from -∞ to ∞)xf(x)dx
+3. E(g(x)) = S(from -∞ to ∞)g(x)f(x)dx
+4. E(X + Y) = E(X) + E(Y)
+5. E(XY) = E(X)E(Y), if X, Y is independent
+6. E(cX) = cE(X)
