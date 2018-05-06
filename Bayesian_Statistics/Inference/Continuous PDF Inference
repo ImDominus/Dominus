@@ -1,0 +1,6 @@
+P(y | x) = p(x | y) * p(y) / ∫ p(x | yi) * p(yi) dyi
+
+But, hard to sometimes calculate ∫ p(x | yi) * p(yi) dyi, So, just use
+P(y | x) ∝ p(x | y) * p(y)
+
+If we use best prior, we can make best estimate posterior.
