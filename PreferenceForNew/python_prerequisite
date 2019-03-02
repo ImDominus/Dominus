@@ -1,0 +1,6 @@
+install iterm2
+/Users/mac/Library/Jupyter/kernels/python3/kernel.json <- change the jupyter kernel interpreter
+install homebrew
+install pyenv
+pyenv install anaconda3-5.2.0
+conda install nomkl <- prevent error (dead kernel)
