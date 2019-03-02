@@ -1,0 +1,93 @@
+
+class Vertex{
+public:
+	long long leftmost, rightmost;
+	long long value;
+	long long lazy;
+
+	Vertex(long long leftmost, long long rightmost, long long value){
+		this->leftmost = leftmost;
+		this->rightmost = rightmost;
+		this->value = value;
+		this->lazy = 0;
+	}
+};
+
+long long arr[(long long)1e6 + 3] = {0};
+Vertex *data[(long long)4e6 + 12] = {nullptr};
+
+class SegmentTree{
+private:
+	void LazyUpdate(long long index){
+		long long leftmost, rightmost;
+		leftmost = data[index]->leftmost;
+		rightmost = data[index]->rightmost;
+
+		data[index]->value += data[index]->lazy * (rightmost - leftmost + 1);
+		if (data[index]->leftmost != data[index]->rightmost){
+			data[2 * index]->lazy += data[index]->lazy;
+			data[2 * index + 1]->lazy += data[index]->lazy;
+		}
+		data[index]->lazy = 0;
+	}
+
+public:
+	SegmentTree(long long index, long long leftmost, long long rightmost){
+		if (leftmost == rightmost){
+			data[index] = new Vertex(leftmost, rightmost, arr[leftmost]);
+		}
+		else{
+			long long mid = (leftmost + rightmost) / 2;
+			SegmentTree(2 * index, leftmost, mid);
+			SegmentTree(2 * index + 1, mid + 1, rightmost);
+			data[index] = new Vertex(leftmost, rightmost, data[2 * index]->value + data[2 * index + 1]->value);
+		}
+	}
+
+	void Update(long long index, long long l, long long r, long long v){
+		long long leftmost, rightmost;
+		leftmost = data[index]->leftmost;
+		rightmost = data[index]->rightmost;
+		LazyUpdate(index);
+		if (leftmost == l && rightmost == r){
+			data[index]->lazy += v;
+			LazyUpdate(index);
+		}
+		else{
+			long long mid = (leftmost + rightmost) / 2;
+			data[index]->value += v * (r - l + 1);
+			if (r <= mid){
+				Update(2 * index, l, r, v);
+			}
+			else if (l >= mid + 1){
+				Update(2 * index + 1, l, r, v);
+			}
+			else{
+				Update(2 * index, l, mid, v);
+				Update(2 * index + 1, mid + 1, r, v);
+			}
+		}
+	}
+
+	long long Query(long long index, long long l, long long r){
+		long long leftmost, rightmost;
+		leftmost = data[index]->leftmost;
+		rightmost = data[index]->rightmost;
+		LazyUpdate(index);
+		if (leftmost == l && rightmost == r){
+			return data[index]->value;
+		}
+		else{
+			long long mid = (leftmost + rightmost) / 2;
+			if (r <= mid){
+				return Query(2 * index, l, r);
+			}
+			else if (l >= mid + 1){
+				return Query(2 * index + 1, l, r);
+			}
+			else{
+				return Query(2 * index, l, mid) + Query(2 * index + 1, mid + 1, r);
+			}
+		}
+	}
+};

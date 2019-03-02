@@ -1,0 +1,77 @@
+
+
+class Fraction{
+private:
+	long long GCD(long long a, long long b){
+		a = abs(a); b = abs(b);
+		if (b == 0) return a;
+		else return GCD(b, a % b);
+	}
+
+	void SGN(){
+		if (den < 0){
+			num *= -1;
+			den *= -1;
+		}
+	}
+
+	void CoPrime(){
+		long long share = GCD(num, den);
+		num /= share;
+		den /= share;
+		SGN();
+	}
+
+public:
+	long long num, den;
+	Fraction(long long num, long long den){
+		this->num = num;
+		this->den = den;
+		CoPrime();
+	}
+
+	void print(){
+		cout << this->num << "/" << this->den << endl;
+	}
+
+	Fraction operator +(const Fraction &another){
+		return Fraction(num * another.den + another.num * den, den * another.den);
+	}
+
+	Fraction operator -(const Fraction &another){
+		return Fraction(num * another.den - another.num * den, den * another.den);
+	}
+
+	Fraction operator *(const Fraction &another){
+		return Fraction(num * another.num, den * another.den);
+	}
+
+	Fraction operator /(const Fraction &another){
+		return Fraction(num * another.den, den * another.num);
+	}
+
+	bool operator < (const Fraction &another){
+		if ((*this - another).num < 0) return true;
+		else return false;
+	}
+
+	bool operator > (const Fraction &another){
+		if ((*this - another).num > 0) return true;
+		else return false;
+	}
+
+	bool operator <= (const Fraction &another){
+		return !(*this > another);
+	}
+
+	bool operator >= (const Fraction &another){
+		return !(*this < another);
+	}
+
+	bool operator == (const Fraction &another){
+		if ((*this - another).num == 0) return true;
+		else return false;
+	}
+
+};
+
